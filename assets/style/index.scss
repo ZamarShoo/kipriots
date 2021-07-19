@@ -1,0 +1,145 @@
+.first-slide {
+    h1 {
+        max-width: 571px;
+    }
+
+    a.btn {
+        margin-top: 7vh;
+    }
+
+    img {
+        max-width: 536px;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .first-slide {
+        div:first-child {
+            margin-top: 130px;
+        }
+        section {
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            min-height: 100vh;
+        }
+        div:first-child {
+            width: 100%;
+        }
+        div:last-child {
+            width: 50%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .first-slide {
+        section {
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 32px;
+        }
+
+        div:first-child {
+            margin-top: 130px;
+        }
+
+        div:last-child {
+            width: 70%;
+            margin-top: 7vh;
+        }
+        a.btn {
+            width: 100%;
+        }
+    }
+}
+
+main .section-wrapper {
+    padding: 80px 0;
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div:first-child {
+            max-width: 561px;
+        }
+    }
+    div {
+        width: 48%;
+    }
+
+    &:not(:first-child) {
+        h2 {
+            font-size: 46px;
+        }
+    }
+
+    &:nth-child(odd) section{
+        flex-direction: row-reverse;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    img {
+        max-width: 560px;
+        max-height: 450px;
+    }
+
+    li {
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main .section-wrapper img {
+        width: 100%;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    main .section-wrapper {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main .section-wrapper section {
+        flex-direction: column !important;
+        
+        div {width: 100%;}
+
+        div:last-child {
+            text-align: center;
+        }
+    }
+    main .section-wrapper img {
+        width: 80% !important;
+        margin: 20px 0 0;
+    }
+    main .section-wrapper {
+        padding: 40px 0;
+    }
+}

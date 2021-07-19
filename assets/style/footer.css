@@ -1,0 +1,126 @@
+.footer {
+  border-top: 1px solid #CFDFE3;
+  padding: 60px 0 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer div:first-child {
+  width: 100%;
+}
+
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo-wrapper span {
+  font-family: 'OktaNeue Regular';
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 100%;
+  color: #707070;
+  opacity: .4;
+}
+
+.footer-info div {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-info div p:first-child {
+  white-space: nowrap;
+  max-width: 286px;
+  width: 100%;
+  color: #707070;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-info div p:first-child::after {
+  content: '';
+  display: inline-block;
+  background: #CFDFE3;
+  height: 1px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.footer-info div p:last-child {
+  font-family: 'OktaNeue SemiBold';
+  color: #707070;
+  max-width: 554px;
+}
+
+.footer-nav {
+  text-align: right;
+}
+
+.footer-nav ul {
+  margin-top: 60px;
+}
+
+.footer-nav li {
+  padding-left: 0;
+  margin-top: 24px;
+}
+
+.footer-nav li a {
+  color: #707070;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 100px 0 60px;
+  }
+  .footer-nav {
+    text-align: start;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer-info div p:first-child::after {
+    margin-left: 10px;
+  }
+  .footer-info div p {
+    font-size: 12px !important;
+  }
+  .footer-info div p:first-child {
+    margin-right: 10px;
+    max-width: 130px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-nav {
+    text-align: center;
+  }
+  .footer-nav a.btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

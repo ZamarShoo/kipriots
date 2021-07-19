@@ -91,7 +91,7 @@ a:hover {
   color: #F96A67 !important;
 }
 
-a.btn, input[type=submit] {
+a.btn, input[type=submit], button {
   color: #FFFFFF;
   font-family: 'OktaNeue Medium';
   padding: 15px 55px;
@@ -103,5 +103,6 @@ a.btn, input[type=submit] {
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  border: none;
 }
 /*# sourceMappingURL=constants.css.map */

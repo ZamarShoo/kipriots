@@ -1,0 +1,113 @@
+.form-wrapper {
+  margin: 80px 0 200px;
+  background: #E2E5F2;
+  border-radius: 30px;
+  padding: 80px;
+}
+
+.form-wrapper input[type=submit] {
+  padding: 21px 81px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.form-wrapper form > div:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.form-wrapper form > div:nth-child(2) {
+  margin: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.form-wrapper h2 {
+  font-size: 46px;
+  margin-bottom: 30px;
+  max-width: 561px;
+}
+
+input, textarea {
+  font-family: 'OktaNeue Medium';
+  font-size: 16px;
+  line-height: 100%;
+  color: #707070;
+  padding: 23px 30px;
+  width: 100%;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 6px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 160px;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'OktaNeue Medium';
+  font-size: 16px;
+  color: #707070;
+}
+
+:-ms-input-placeholder {
+  font-family: 'OktaNeue Medium';
+  font-size: 16px;
+  color: #707070;
+}
+
+::-ms-input-placeholder {
+  font-family: 'OktaNeue Medium';
+  font-size: 16px;
+  color: #707070;
+}
+
+::placeholder {
+  font-family: 'OktaNeue Medium';
+  font-size: 16px;
+  color: #707070;
+}
+
+@media screen and (max-width: 1000px) {
+  .form-wrapper {
+    padding: 80px 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-wrapper form > div:first-child, .form-wrapper form > div:nth-child(2) {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+  .form-wrapper form > div:first-child input, .form-wrapper form > div:nth-child(2) input {
+    margin-bottom: 20px;
+  }
+  .form-wrapper input[type=submit] {
+    width: 100%;
+  }
+  .form-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-wrapper {
+    padding: 80px 20px;
+    left: -20px;
+    position: relative;
+    width: 100vw;
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=form.css.map */
