@@ -1,0 +1,21 @@
+#cookie_notification {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 1px solid #262626;
+    background-color: white;
+    z-index: 50;
+
+    .cookie-p {
+        margin: 6px 0 20px;
+    }
+}
+
+#cookie_notification.show {display: block;}
+
+@media screen and (max-width: 550px) {
+    #cookie_notification {padding: 50px 20px 60px;button {width: 100%;}}
+}

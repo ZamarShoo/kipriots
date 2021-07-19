@@ -143,4 +143,33 @@ nav ul li:last-child {
     margin-top: 100px;
   }
 }
+
+@media screen and (max-height: 550px) {
+  .activeHeader nav ul li {
+    padding: 5px 0 !important;
+  }
+  .activeHeader .navigation a.btn {
+    margin-top: 5vh !important;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .activeHeader nav ul li {
+    padding: 5px 0 !important;
+  }
+  .activeHeader nav ul li a {
+    font-size: 20px;
+  }
+  .activeHeader .navigation a.btn {
+    margin-top: 5vh !important;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .navigation {
+    overflow-y: scroll;
+    height: 350px;
+    padding-bottom: 150px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

@@ -8,7 +8,7 @@
     }
 
     img {
-        max-width: 536px;
+        max-width: 450px;
     }
 
     section {
@@ -65,7 +65,7 @@
     }
 }
 
-main .section-wrapper {
+main.index-main .section-wrapper {
     padding: 80px 0;
     section {
         display: flex;
@@ -105,7 +105,7 @@ main .section-wrapper {
 }
 
 @media screen and (max-width: 1200px) {
-    main .section-wrapper img {
+    main.index-main .section-wrapper img {
         width: 100%;
     }
 
@@ -120,13 +120,13 @@ main .section-wrapper {
         font-size: 32px !important;
     }
 
-    main .section-wrapper {
+    main.index-main .section-wrapper {
         padding: 60px 0;
     }
 }
 
 @media screen and (max-width: 750px) {
-    main .section-wrapper section {
+    main.index-main .section-wrapper section {
         flex-direction: column !important;
         
         div {width: 100%;}
@@ -135,11 +135,11 @@ main .section-wrapper {
             text-align: center;
         }
     }
-    main .section-wrapper img {
+    main.index-main .section-wrapper img {
         width: 80% !important;
         margin: 20px 0 0;
     }
-    main .section-wrapper {
+    main.index-main .section-wrapper {
         padding: 40px 0;
     }
 }

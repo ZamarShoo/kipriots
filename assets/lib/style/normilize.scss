@@ -34,12 +34,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-    scrollbar-width: none;
   }
   
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
   
   /**
      * Render the `main` element consistently in IE.

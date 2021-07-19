@@ -4,25 +4,33 @@
 @import './footer.scss';
 @import './form.scss';
 @import './index.scss';
+@import './cookie.scss';
 
-#cookie_notification {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 25px 20px;
-    border-top: 1px solid #262626;
-    background-color: white;
-    z-index: 50;
-
-    .cookie-p {
-        margin: 6px 0 20px;
+.single-first-slide {
+    & > .first-slide > section {min-height: auto;height: auto;padding-top: 25vh;}
+    h1, p {
+        max-width: 660px;
+    }
+    p {
+        margin-top: 20px;
     }
 }
 
-#cookie_notification.show {display: block;}
+#text {
+    margin-top: -15vh;
+    section > div {max-width: 720px;}
+    h2 {margin: 60px 0 20px}
+    h3 {margin: 30px 0 15px}
+    p {margin: 20px 0 5px}
+    li {margin: 10px 0;}
+}
 
-@media screen and (max-width: 550px) {
-    #cookie_notification {padding: 50px 20px 60px;button {width: 100%;}}
+@media screen and (max-width: 1200px) {
+    #text {margin-top: -5vh;}
+}
+
+@media screen and (max-width: 1000px) {
+    .single-first-slide {
+        & > .first-slide > section {padding-top: 5vh;}
+    }
 }

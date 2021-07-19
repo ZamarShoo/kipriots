@@ -33,11 +33,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  scrollbar-width: none;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
 }
 
 /**
@@ -462,7 +457,7 @@ a:hover {
 }
 
 a.btn, input[type=submit], button {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-family: 'OktaNeue Medium';
   padding: 15px 55px;
   background: #F96A67;
@@ -619,6 +614,35 @@ nav ul li:last-child {
   }
   .activeHeader .navigation {
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .activeHeader nav ul li {
+    padding: 5px 0 !important;
+  }
+  .activeHeader .navigation a.btn {
+    margin-top: 5vh !important;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .activeHeader nav ul li {
+    padding: 5px 0 !important;
+  }
+  .activeHeader nav ul li a {
+    font-size: 20px;
+  }
+  .activeHeader .navigation a.btn {
+    margin-top: 5vh !important;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .navigation {
+    overflow-y: scroll;
+    height: 350px;
+    padding-bottom: 150px;
   }
 }
 
@@ -870,7 +894,7 @@ textarea {
 }
 
 .first-slide img {
-  max-width: 536px;
+  max-width: 450px;
 }
 
 .first-slide section {
@@ -933,11 +957,11 @@ textarea {
   }
 }
 
-main .section-wrapper {
+main.index-main .section-wrapper {
   padding: 80px 0;
 }
 
-main .section-wrapper section {
+main.index-main .section-wrapper section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,40 +973,40 @@ main .section-wrapper section {
           align-items: center;
 }
 
-main .section-wrapper section div:first-child {
+main.index-main .section-wrapper section div:first-child {
   max-width: 561px;
 }
 
-main .section-wrapper div {
+main.index-main .section-wrapper div {
   width: 48%;
 }
 
-main .section-wrapper:not(:first-child) h2 {
+main.index-main .section-wrapper:not(:first-child) h2 {
   font-size: 46px;
 }
 
-main .section-wrapper:nth-child(odd) section {
+main.index-main .section-wrapper:nth-child(odd) section {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-main .section-wrapper p {
+main.index-main .section-wrapper p {
   margin: 20px 0;
 }
 
-main .section-wrapper img {
+main.index-main .section-wrapper img {
   max-width: 560px;
   max-height: 450px;
 }
 
-main .section-wrapper li {
+main.index-main .section-wrapper li {
   margin: 12px 0;
 }
 
 @media screen and (max-width: 1200px) {
-  main .section-wrapper img {
+  main.index-main .section-wrapper img {
     width: 100%;
   }
   p, li {
@@ -994,29 +1018,29 @@ main .section-wrapper li {
   h2 {
     font-size: 32px !important;
   }
-  main .section-wrapper {
+  main.index-main .section-wrapper {
     padding: 60px 0;
   }
 }
 
 @media screen and (max-width: 750px) {
-  main .section-wrapper section {
+  main.index-main .section-wrapper section {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  main .section-wrapper section div {
+  main.index-main .section-wrapper section div {
     width: 100%;
   }
-  main .section-wrapper section div:last-child {
+  main.index-main .section-wrapper section div:last-child {
     text-align: center;
   }
-  main .section-wrapper img {
+  main.index-main .section-wrapper img {
     width: 80% !important;
     margin: 20px 0 0;
   }
-  main .section-wrapper {
+  main.index-main .section-wrapper {
     padding: 40px 0;
   }
 }
@@ -1047,6 +1071,56 @@ main .section-wrapper li {
   }
   #cookie_notification button {
     width: 100%;
+  }
+}
+
+.single-first-slide > .first-slide > section {
+  min-height: auto;
+  height: auto;
+  padding-top: 25vh;
+}
+
+.single-first-slide h1, .single-first-slide p {
+  max-width: 660px;
+}
+
+.single-first-slide p {
+  margin-top: 20px;
+}
+
+#text {
+  margin-top: -15vh;
+}
+
+#text section > div {
+  max-width: 720px;
+}
+
+#text h2 {
+  margin: 60px 0 20px;
+}
+
+#text h3 {
+  margin: 30px 0 15px;
+}
+
+#text p {
+  margin: 20px 0 5px;
+}
+
+#text li {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #text {
+    margin-top: -5vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .single-first-slide > .first-slide > section {
+    padding-top: 5vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
