@@ -1,0 +1,129 @@
+header {
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.header, nav ul, .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 100%;
+    margin-left: 12vw;
+}
+
+nav ul li {
+    padding: 0 20px;
+
+    a {
+        color: #707070;
+    }
+}
+
+nav ul li:first-child {
+    padding-left: 0;
+}
+
+nav ul li:last-child {
+    padding-right: 0;
+}
+
+.burger {
+    width: 40px;
+    min-width: 40px;
+    height: 22px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+
+    span {
+        position: relative;
+        height: 4px;
+        background-color: #262626;
+        width: 100%;
+        transition: .3s;
+    }
+
+    span:last-child {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .navigation {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    header {
+        padding-top: 30px;
+    }
+    .activeHeader {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+
+        .burger {
+            span {
+                width: 40px !important;
+                position: absolute;
+                top: 9px;
+            }
+            span:first-child {
+                transform: rotate(45deg);
+            }
+            span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+        .navigation {
+            background-color: white;
+            position: absolute;
+            display: block;
+            margin-top: 150px;
+            margin-left: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            top: 0;
+            left: 0;
+            text-align: center;
+
+            a.btn {
+                margin-top: 10vh;
+            }
+        }
+
+        nav ul {
+            flex-direction: column;
+        }
+        nav ul li {
+            padding: 15px 0 !important;
+        }
+        nav ul li a {
+            font-family: 'OktaNeue Medium';
+            color: #707070;
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .activeHeader .navigation a.btn {
+        width: 100%;
+    }
+    .activeHeader .navigation {
+        margin-top: 100px;
+    }
+}
