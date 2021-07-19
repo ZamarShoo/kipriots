@@ -2,3 +2,9 @@
     margin-top: 25vh;
     margin-bottom: 100px;
 }
+
+@media screen and (max-width: 550px) {
+    .policy h1 {
+        font-size: 36px;
+    }
+}

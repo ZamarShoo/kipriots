@@ -1,0 +1,61 @@
+.first-slide-404 {
+  margin-top: 150px;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-slide-404 h1 {
+  font-size: 120px;
+  margin-bottom: 30px;
+}
+
+.first-slide-404 h1 span {
+  color: #F96A67;
+}
+
+.first-slide-404 p {
+  font-family: 'OktaNeue SemiBold';
+  color: #262626;
+}
+
+.first-slide-404 a.btn {
+  margin-top: 40px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+@media screen and (max-width: 900px) {
+  .first-slide-404 {
+    margin-top: 120px;
+  }
+  .first-slide-404 h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+  .first-slide-404 a.btn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .first-slide-404 {
+    margin-top: 80px;
+  }
+  .first-slide-404 h1 {
+    font-size: 60px;
+  }
+  .first-slide-404 a.btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=page404.css.map */
