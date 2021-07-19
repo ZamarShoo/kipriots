@@ -1,0 +1,50 @@
+.single-first-slide > .first-slide > section {
+  min-height: auto;
+  height: auto;
+  padding-top: 25vh;
+}
+
+.single-first-slide h1, .single-first-slide p {
+  max-width: 660px;
+}
+
+.single-first-slide p {
+  margin-top: 20px;
+}
+
+#text {
+  margin-top: -15vh;
+}
+
+#text section > div {
+  max-width: 720px;
+}
+
+#text h2 {
+  margin: 60px 0 20px;
+}
+
+#text h3 {
+  margin: 30px 0 15px;
+}
+
+#text p {
+  margin: 20px 0 5px;
+}
+
+#text li {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #text {
+    margin-top: -5vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .single-first-slide > .first-slide > section {
+    padding-top: 5vh;
+  }
+}
+/*# sourceMappingURL=single.css.map */

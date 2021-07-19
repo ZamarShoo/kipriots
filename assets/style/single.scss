@@ -1,0 +1,28 @@
+.single-first-slide {
+    & > .first-slide > section {min-height: auto;height: auto;padding-top: 25vh;}
+    h1, p {
+        max-width: 660px;
+    }
+    p {
+        margin-top: 20px;
+    }
+}
+
+#text {
+    margin-top: -15vh;
+    section > div {max-width: 720px;}
+    h2 {margin: 60px 0 20px}
+    h3 {margin: 30px 0 15px}
+    p {margin: 20px 0 5px}
+    li {margin: 10px 0;}
+}
+
+@media screen and (max-width: 1200px) {
+    #text {margin-top: -5vh;}
+}
+
+@media screen and (max-width: 1000px) {
+    .single-first-slide {
+        & > .first-slide > section {padding-top: 5vh;}
+    }
+}
